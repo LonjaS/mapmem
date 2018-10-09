@@ -1,0 +1,211 @@
+----------------------------------------
+Begin PBS Prologue Tue Oct  2 16:14:34 CEST 2018 1538489674
+Job ID:		   17513884.dccn-l029.dccn.nl
+Username:	   lonsch
+Group:		   memspa
+Asked resources:   walltime=12:03:00,mem=7516192768b,neednodes=matlab,ncpus=1
+Queue:		   matlab
+Nodes:		   dccn-c034.dccn.nl
+End PBS Prologue Tue Oct  2 16:14:34 CEST 2018 1538489674
+----------------------------------------
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018a (9.4.0.813654) 64-bit (glnxa64)
+                             February 23, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+[Warning: Function iscolumn has the same name as a MATLAB builtin. We suggest
+you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function ismatrix has the same name as a MATLAB builtin. We suggest
+you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function isrow has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function narginchk has the same name as a MATLAB builtin. We suggest
+you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function isequaln has the same name as a MATLAB builtin. We suggest
+you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function contains has the same name as a MATLAB builtin. We suggest
+you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function endsWith has the same name as a MATLAB builtin. We suggest
+you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function newline has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function startsWith has the same name as a MATLAB builtin. We suggest
+you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function isfile has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function isfolder has the same name as a MATLAB builtin. We suggest
+you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function isfile has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function isfolder has the same name as a MATLAB builtin. We suggest
+you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+[Warning: Function isstring has the same name as a MATLAB builtin. We suggest
+you rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In setcustompath (line 46)
+  In fexec (line 80)
+  In qsubexec (line 95)] 
+mkdir: cannot create directory ‘/project/3012026.13/anatomy/sub-038/preproc/mri’: File exists
+mri_convert -c -oc 0 0 0 /project/3012026.13/anatomy/sub-038/preproc/sub-038_mni_resliced.mgz orig.mgz 
+$Id: mri_convert.c,v 1.179.2.7 2012/09/05 21:55:16 mreuter Exp $
+reading from /project/3012026.13/anatomy/sub-038/preproc/sub-038_mni_resliced.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Original Data has (1, 1, 1) mm size and (256, 256, 256) voxels.
+Data is conformed to 1 mm size and 256 voxels for all directions
+changing data type from float to uchar (noscale = 0)...
+MRIchangeType: Building histogram 
+Reslicing using trilinear interpolation 
+writing to orig.mgz...
+mri_convert -c -oc 0 0 0 /project/3012026.13/anatomy/sub-038/preproc/sub-038_skullstrip.mgz brainmask.mgz 
+$Id: mri_convert.c,v 1.179.2.7 2012/09/05 21:55:16 mreuter Exp $
+reading from /project/3012026.13/anatomy/sub-038/preproc/sub-038_skullstrip.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Original Data has (1, 1, 1) mm size and (256, 256, 256) voxels.
+Data is conformed to 1 mm size and 256 voxels for all directions
+changing data type from float to uchar (noscale = 0)...
+MRIchangeType: Building histogram 
+Reslicing using trilinear interpolation 
+writing to brainmask.mgz...
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+INFO: SUBJECTS_DIR is /project/3012026.13/anatomy/sub-038
+Actual FREESURFER_HOME /opt/freesurfer/5.3
+-rw-rw-r-- 1 lonsch memspa 267288 Oct  2 15:20 /project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log
+/project/3012026.13/anatomy/sub-038/preproc/scripts/recon-all.log: Permission denied.
+executing job took 42.640862 seconds and 3678208 bytes
+----------------------------------------
+Begin PBS Epilogue Tue Oct  2 16:16:08 CEST 2018 1538489768
+Job ID:		   17513884.dccn-l029.dccn.nl
+Username:	   lonsch
+Group:		   memspa
+Job Name:	   preps_freesurfer1_j035
+Session:	   54598
+Asked resources:   walltime=12:03:00,mem=7516192768b,neednodes=matlab,ncpus=1
+Used resources:	   cput=00:00:59,vmem=5787288kb,walltime=00:00:36,mem=436100kb,energy_used=0
+Queue:		   matlab
+Nodes:		   dccn-c034.dccn.nl
+End PBS Epilogue Tue Oct  2 16:16:08 CEST 2018 1538489768
+----------------------------------------
